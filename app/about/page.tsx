@@ -14,8 +14,8 @@ export default function AboutPage() {
           </p>
           <div className="flex justify-center">
             <img
-              src="/placeholder.svg?height=300&width=300"
-              alt="Alex Morgan"
+              src="/about-pictures/profile.jpg"
+              alt="Stanton Edwards"
               className="rounded-full h-64 w-64 object-cover border-4 border-primary/20"
             />
           </div>
@@ -28,7 +28,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-foreground mb-8 text-center">My Journey</h2>
           <div className="prose prose-lg max-w-none text-foreground">
             <p>
-              I'm Alex Morgan, a Business Intelligence Manager with a passion for transforming complex data into clear,
+              I'm Stanton Edwards, a Business Intelligence Manager with a passion for transforming complex data into clear,
               actionable insights. My journey in the world of data began over 8 years ago, and I've been fascinated by
               the power of information ever since.
             </p>

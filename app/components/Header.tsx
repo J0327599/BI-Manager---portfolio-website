@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
-import { MoonIcon, SunIcon } from "lucide-react"
+import { MoonIcon, SunIcon, BarChart3 } from "lucide-react"
 import { usePathname } from "next/navigation"
 
 export default function Header() {
@@ -24,16 +24,30 @@ export default function Header() {
 
   return (
     <motion.header
-      className="sticky top-0 z-50 bg-background/80 backdrop-blur-md"
+      className="sticky top-0 z-50 relative"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-[url('/images/header-bg.jpg')] bg-cover bg-center opacity-10"
+        style={{ zIndex: -1 }}
+      />
+      {/* Blur Overlay */}
+      <div 
+        className="absolute inset-0 bg-background/80 backdrop-blur-md"
+        style={{ zIndex: -1 }}
+      />
+      
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">BI Manager Portfolio</span>
-            <div className="font-bold text-xl text-primary">DataVision</div>
+            <div className="flex items-center gap-2">
+              <BarChart3 className="h-6 w-6 text-primary" />
+              <div className="font-bold text-xl text-primary">DataVision</div>
+            </div>
           </Link>
         </div>
         <div className="hidden md:flex md:gap-x-8">

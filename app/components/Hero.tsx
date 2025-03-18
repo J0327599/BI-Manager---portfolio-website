@@ -15,7 +15,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-gradient">Alex Morgan</span>
+            <span className="text-gradient">Stanton Edwards</span>
           </motion.h1>
           <motion.p
             className="mt-2 text-2xl text-primary font-semibold"
@@ -54,21 +54,31 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <div className="relative h-[400px] w-[400px] lg:h-[500px] lg:w-[500px] bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full flex items-center justify-center">
-            <div className="absolute top-1/4 left-1/4 bg-primary/20 p-4 rounded-lg shadow-lg">
-              <BarChart3 size={48} className="text-primary" />
-            </div>
-            <div className="absolute top-1/3 right-1/6 bg-secondary/20 p-4 rounded-lg shadow-lg">
-              <PieChart size={48} className="text-secondary" />
-            </div>
-            <div className="absolute bottom-1/4 left-1/6 bg-accent/20 p-4 rounded-lg shadow-lg">
-              <LineChart size={48} className="text-accent" />
-            </div>
-            <div className="absolute bottom-1/3 right-1/4 bg-muted/20 p-4 rounded-lg shadow-lg">
-              <Database size={48} className="text-muted-foreground" />
-            </div>
-            <div className="h-[200px] w-[200px] rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center">
-              <div className="text-2xl font-bold text-primary">BI</div>
+          <div className="relative h-[400px] w-[400px] lg:h-[500px] lg:w-[500px] rounded-full flex items-center justify-center overflow-hidden">
+            {/* Background Image */}
+            <div 
+              className="absolute inset-0 bg-[url('/hero-images/hero-bg.jpg')] bg-cover bg-center opacity-20"
+              style={{ zIndex: 0 }}
+            />
+            {/* Gradient Overlay */}
+            <div 
+              className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10"
+              style={{ zIndex: 1 }}
+            />
+            
+            {/* Icons Layer */}
+            <div className="relative z-10 w-full h-full">
+              <div className="absolute top-1/3 right-1/6 bg-secondary/20 p-4 rounded-lg shadow-lg">
+                <PieChart size={48} className="text-secondary" />
+              </div>
+              <div className="absolute bottom-1/4 left-1/6 bg-accent/20 p-4 rounded-lg shadow-lg">
+                <LineChart size={48} className="text-accent" />
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="h-[200px] w-[200px] rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center">
+                  <div className="text-7xl font-bold text-primary">BI</div>
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>

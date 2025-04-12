@@ -185,6 +185,14 @@ const projectsData = {
   },
 }
 
+export async function generateStaticParams() {
+  const projectIds = Object.keys(projectsData);
+
+  return projectIds.map((id) => ({
+    id: id,
+  }));
+}
+
 export default function ProjectPage({ params }: { params: { id: string } }) {
   const project = projectsData[params.id as keyof typeof projectsData]
 
@@ -325,4 +333,3 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
     </div>
   )
 }
-

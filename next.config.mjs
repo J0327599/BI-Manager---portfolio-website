@@ -6,7 +6,10 @@ try {
 }
 
 /** @type {import('next').NextConfig} */
+const repoName = '/BI-Manager---portfolio-website';
 const nextConfig = {
+  basePath: repoName,
+  assetPrefix: repoName + '/',
   output: 'export',
   eslint: {
     ignoreDuringBuilds: true,

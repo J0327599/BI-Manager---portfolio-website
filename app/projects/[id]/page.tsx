@@ -8,7 +8,7 @@ const projectsData = {
     description: "Interactive dashboard providing real-time insights into sales performance across regions",
     fullDescription:
       "This comprehensive sales analytics dashboard was designed for a multinational retail corporation seeking to consolidate their sales data across 50+ global locations. The solution provides real-time monitoring of key performance indicators, regional comparisons, product category analysis, and predictive sales forecasting.",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/BI-Manager---portfolio-website/placeholder.svg?height=600&width=1200",
     tags: ["Power BI", "SQL", "Data Modeling", "DAX"],
     client: "Global Retail Inc.",
     date: "January 2023",
@@ -44,7 +44,7 @@ const projectsData = {
     description: "Advanced clustering analysis to identify key customer segments for targeted marketing",
     fullDescription:
       "This project involved developing a sophisticated customer segmentation model for a financial services company looking to optimize their marketing campaigns and product offerings. Using machine learning techniques, we identified distinct customer segments based on behavioral patterns, transaction history, and demographic information.",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/BI-Manager---portfolio-website/placeholder.svg?height=600&width=1200",
     tags: ["Python", "Machine Learning", "Tableau", "K-means Clustering"],
     client: "FinServe Solutions",
     date: "August 2022",
@@ -80,7 +80,7 @@ const projectsData = {
     description: "End-to-end supply chain analytics solution that reduced logistics costs by 15%",
     fullDescription:
       "This project involved developing a comprehensive supply chain analytics solution for a manufacturing company struggling with inventory management and logistics inefficiencies. The solution provided end-to-end visibility across the supply chain, from procurement to delivery, with predictive capabilities for demand forecasting and inventory optimization.",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/BI-Manager---portfolio-website/placeholder.svg?height=600&width=1200",
     tags: ["ETL", "Power BI", "SQL", "Predictive Analytics"],
     client: "ManufactureTech Industries",
     date: "March 2022",
@@ -116,7 +116,7 @@ const projectsData = {
     description: "Predictive analytics model for accurate financial forecasting and budget planning",
     fullDescription:
       "This project involved developing a sophisticated financial forecasting model for a healthcare organization to improve budget planning and financial decision-making. The solution combined historical financial data with operational metrics to create accurate predictions of revenue, expenses, and cash flow.",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/BI-Manager---portfolio-website/placeholder.svg?height=600&width=1200",
     tags: ["Excel", "Statistical Analysis", "Forecasting", "Power BI"],
     client: "HealthCare Partners",
     date: "November 2021",
@@ -152,7 +152,7 @@ const projectsData = {
     description: "Comprehensive analysis of marketing campaign performance and return on investment",
     fullDescription:
       "This project involved developing a marketing analytics solution for an e-commerce company to measure and optimize the ROI of their digital marketing campaigns. The solution integrated data from multiple marketing platforms, website analytics, and sales systems to provide a holistic view of marketing performance.",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/BI-Manager---portfolio-website/placeholder.svg?height=600&width=1200",
     tags: ["Google Analytics", "Data Studio", "SQL", "Attribution Modeling"],
     client: "E-Shop Global",
     date: "July 2021",
@@ -201,7 +201,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
       <div className="container mx-auto px-4 py-20 text-center">
         <h1 className="text-3xl font-bold mb-4">Project Not Found</h1>
         <p className="mb-8">The project you're looking for doesn't exist or has been removed.</p>
-        <Link href="/projects" className="apple-button">
+        <Link href="/BI-Manager---portfolio-website/projects" className="apple-button">
           Back to Projects
         </Link>
       </div>
@@ -220,7 +220,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl">
             <Link
-              href="/projects"
+              href="/BI-Manager---portfolio-website/projects"
               className="inline-flex items-center text-white mb-6 hover:text-primary transition-colors"
             >
               <ArrowLeft className="mr-2 h-4 w-4" /> Back to Projects
